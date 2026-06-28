@@ -47,6 +47,54 @@ If you'd like to run it locally, follow the installation instructions below.
 
 ---
 
+## Architecture
+
+                    Globe3D
+
+                       │
+
+        ┌──────────────┼──────────────┐
+
+        │              │              │
+
+        ▼              ▼              ▼
+
+ Scene Director   Camera Engine   UI Layer
+
+        │              │              │
+
+        └──────────────┼──────────────┘
+
+                       ▼
+
+               Rendering Engine
+
+                       │
+
+      ┌──────────┬──────────┬──────────┐
+
+      ▼          ▼          ▼          ▼
+
+    Earth      Routes    Particles   Shaders
+
+                       │
+
+                       ▼
+
+                Visualization Layer
+
+                       │
+
+          ┌────────────┴────────────┐
+
+          ▼                         ▼
+
+       Markers                  Labels
+
+The project follows a modular architecture where each subsystem is independently reusable and communicates through centralized state management and the Scene Director.
+---
+
+
 ## Tech Stack
 
 | Layer | Technology |
