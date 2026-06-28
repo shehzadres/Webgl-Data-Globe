@@ -189,6 +189,21 @@ The project follows a modular architecture where each subsystem is independently
 
 ---
 
+## Technical Challenges & Solutions
+
+| Challenge | Solution |
+|-----------|----------|
+| Rendering thousands of visual elements efficiently | Built reusable `BufferGeometry`-based rendering systems and eliminated per-frame object allocations. |
+| Creating realistic flight paths on a sphere | Implemented great-circle interpolation instead of linear interpolation to generate accurate globe-spanning routes. |
+| Maintaining smooth camera movement | Developed a custom spherical-coordinate camera engine with configurable damping and cinematic presets. |
+| Preventing rendering logic from becoming tightly coupled | Introduced a centralized Scene Director to coordinate camera movement, animations, UI state, and visualization layers. |
+| Managing multiple custom GLSL shaders | Designed a modular shader framework with shared utilities and centralized uniform management. |
+| Keeping React performant alongside WebGL rendering | Isolated rendering logic from the React component tree using Zustand, memoization, and reusable rendering systems. |
+| Supporting integrated GPUs | Optimized rendering for Intel Iris Xe Graphics through geometry reuse, adaptive DPR, shared materials, and efficient update loops. |
+| Building a scalable project structure | Organized the application into independent subsystems (camera, particles, routes, shaders, visualization, UI, and director) to simplify maintenance and future expansion. |
+
+---
+
 ## Tech Stack
 
 | Layer | Technology |
