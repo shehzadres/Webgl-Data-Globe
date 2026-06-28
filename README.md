@@ -407,6 +407,8 @@ See [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
 - 📘 [README.md](README.md) — Project overview
 - 🏗️ [ARCHITECTURE.md](ARCHITECTURE.md) — System architecture
 - 📝 [CHANGELOG.md](CHANGELOG.md) — Release history
+- 🤝 [CONTRIBUTING.md](CONTRIBUTING.md) — Contribution guidelines
+- 📜 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) — Community standards
 
 ---
 
