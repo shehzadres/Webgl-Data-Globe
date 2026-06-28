@@ -128,6 +128,8 @@ If you'd like to run it locally, follow the installation instructions below.
        Markers                  Labels
 
 The project follows a modular architecture where each subsystem is independently reusable and communicates through centralized state management and the Scene Director.
+
+> 📖 **Want a deeper technical overview?** See **[ARCHITECTURE.md](ARCHITECTURE.md)**.
 ---
 
 ## Technical Highlights
