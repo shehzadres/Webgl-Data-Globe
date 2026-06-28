@@ -94,6 +94,62 @@ If you'd like to run it locally, follow the installation instructions below.
 The project follows a modular architecture where each subsystem is independently reusable and communicates through centralized state management and the Scene Director.
 ---
 
+## Technical Highlights
+
+### Rendering Engine
+
+- Custom React Three Fiber rendering pipeline with centralized renderer configuration.
+- Frame-rate independent animation loop using delta-time updates.
+- Modular scene composition with reusable rendering systems.
+- Optimized for stable **60 FPS** on Intel Iris Xe Graphics.
+
+### Camera System
+
+- Fully custom spherical-coordinate camera engine (no OrbitControls in production).
+- Smooth interpolation with configurable damping and cinematic camera presets.
+- Scene Director integration for timeline-driven camera transitions.
+- Mobile-friendly touch controls with constrained zoom and rotation.
+
+### Visualization Engine
+
+- Geographic coordinate conversion (Latitude/Longitude → 3D World Space).
+- Data-driven marker, spike, and label rendering architecture.
+- Great-circle interpolation for realistic globe route visualization.
+- Modular dataset system supporting multiple visualization layers.
+
+### Shader Framework
+
+- Custom GLSL shader architecture with centralized uniform management.
+- Fresnel-based atmosphere shader.
+- GPU-animated procedural noise.
+- Reusable glow material system.
+- Shared GLSL utility library for future shader extensions.
+
+### Particle Engine
+
+- High-performance particle systems using `BufferGeometry` and `Points`.
+- Shared geometry and material resources.
+- Zero per-frame heap allocations inside animation loops.
+- Modular particle manager supporting stars, orbital rings, and ambient space particles.
+
+### Performance Optimizations
+
+- Shared shader uniform updates.
+- Geometry and material reuse.
+- Cached texture loading.
+- Adaptive device pixel ratio.
+- Draw-range based route animation.
+- Memoized React components where appropriate.
+- Minimal React re-renders through Zustand state management.
+
+### Software Architecture
+
+- Scene Director coordinating camera, animation, UI, and visualization layers.
+- Modular subsystem design with clear separation of responsibilities.
+- Reusable rendering, animation, and shader frameworks.
+- Production-oriented project structure designed for long-term scalability.
+
+---
 
 ## Tech Stack
 
