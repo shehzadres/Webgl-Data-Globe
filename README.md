@@ -1,13 +1,36 @@
 # Globe3D — WebGL-Powered 3D Earth Data Visualization
 
+<p align="center">
+  <img src="docs/screenshots/hero.png" alt="Globe3D Hero" width="100%">
+</p>
+
+<p align="center">
+
+<a href="https://webgl-data-globe.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/Live_Demo-Open-success?style=for-the-badge&logo=vercel" />
+</a>
+
+<img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
+
+<img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
+
+<img src="https://img.shields.io/badge/Three.js-WebGL-black?style=for-the-badge&logo=threedotjs" />
+
+<img src="https://img.shields.io/badge/GLSL-Shaders-6E4AFF?style=for-the-badge" />
+
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" />
+
+</p>
+
 > Production-quality interactive 3D globe built with React 18, Three.js, and custom GLSL shaders. A cinematic, scroll-driven storytelling experience with geospatial data visualization, flight route animation, particle systems, and a fully custom camera engine.
 
 ---
 
 ## Live Demo
 
-Deploy your own in minutes — see [Deployment](#deployment) below.
+🚀 **Live Application:** https://webgl-data-globe.vercel.app/
 
+If you'd like to run it locally, follow the installation instructions below.
 ---
 
 ## Features
