@@ -343,6 +343,65 @@ See [`.github/workflows/ci.yml`](.github/workflows/ci.yml)
 
 ---
 
+## Roadmap
+
+### ✅ v1.0.0 — Production Release
+
+- [x] Realistic Earth rendering
+- [x] Custom camera engine
+- [x] Scene Director
+- [x] Great-circle route visualization
+- [x] Interactive markers & spike charts
+- [x] BufferGeometry particle engine
+- [x] Custom GLSL shader framework
+- [x] Scroll-driven storytelling
+- [x] Advanced UI & search
+- [x] Embeddable widget
+- [x] CI/CD pipeline
+- [x] Performance optimization
+
+---
+
+### 🚀 v1.1 — Live Data Integration
+
+- [ ] GitHub contribution visualization
+- [ ] USGS live earthquake feed
+- [ ] OpenWeatherMap weather layer
+- [ ] Real-time ISS & satellite tracking
+- [ ] Live air traffic integration
+
+---
+
+### 🌐 v1.2 — Advanced Visualization
+
+- [ ] Time-series playback
+- [ ] Heatmap overlays
+- [ ] Country-level analytics
+- [ ] Interactive filtering
+- [ ] Animated choropleth maps
+
+---
+
+### 🥽 v1.3 — Immersive Experience
+
+- [ ] WebXR support
+- [ ] VR controller interaction
+- [ ] Spatial UI
+- [ ] Virtual globe exploration
+
+---
+
+### ⚡ v2.0 — Next Generation
+
+- [ ] GPU-compute particle simulation
+- [ ] Procedural atmosphere & volumetric clouds
+- [ ] Ocean simulation
+- [ ] Dynamic weather system
+- [ ] Plugin API for custom datasets
+- [ ] Multi-user collaborative sessions
+
+---
+
 ## License
 
 MIT — see [LICENSE](LICENSE)
