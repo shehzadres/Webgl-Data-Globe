@@ -1,0 +1,55 @@
+.hud {
+  position: fixed;
+  top: 72px;
+  left: 28px;
+  z-index: 160;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  pointer-events: none;
+}
+
+.row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.key {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  color: #2d5a7a;
+  min-width: 60px;
+}
+
+.value {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: #4a7fa8;
+}
+
+.progressBar {
+  margin-top: 4px;
+  width: 80px;
+  height: 1px;
+  background: #1a3a52;
+  border-radius: 1px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: #4a7fa8;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 640px) {
+  .hud {
+    top: 60px;
+    left: 12px;
+  }
+}

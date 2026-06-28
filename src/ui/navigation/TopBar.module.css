@@ -1,0 +1,105 @@
+.bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 160;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 28px;
+  pointer-events: none;
+}
+
+.brand { pointer-events: all; }
+
+.homeBtn {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+.homeBtn:hover { opacity: 0.75; }
+
+.brandLabel {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  color: #e8f4ff;
+  line-height: 1;
+}
+
+.brandSub {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  color: #4a7fa8;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: all;
+}
+
+.action {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 10, 20, 0.7);
+  border: 1px solid #1a3a52;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #4a7fa8;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  backdrop-filter: blur(6px);
+}
+.action:hover, .action.active {
+  color: #a8d4f5;
+  border-color: #2a6a9a;
+  background: rgba(10, 30, 60, 0.88);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 8px;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 6px #22c55e;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.4; }
+}
+
+.statusText {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4a7fa8;
+}
+
+@media (max-width: 640px) {
+  .bar { padding: 12px 16px; }
+  .brandLabel { font-size: 16px; }
+}

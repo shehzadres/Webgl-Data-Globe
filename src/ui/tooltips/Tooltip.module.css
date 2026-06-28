@@ -1,0 +1,27 @@
+.wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: 200;
+  background: rgba(5, 10, 20, 0.95);
+  border: 1px solid #1a3a52;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: #a8c8e8;
+  white-space: nowrap;
+  pointer-events: none;
+  transform-origin: center;
+}
+
+.top    { bottom: calc(100% + 6px); left: 50%; translate: -50% 0; }
+.bottom { top:    calc(100% + 6px); left: 50%; translate: -50% 0; }
+.left   { right:  calc(100% + 6px); top:  50%; translate: 0 -50%; }
+.right  { left:   calc(100% + 6px); top:  50%; translate: 0 -50%; }

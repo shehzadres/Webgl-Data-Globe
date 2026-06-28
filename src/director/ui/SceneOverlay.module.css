@@ -1,0 +1,55 @@
+.container {
+  position: fixed;
+  bottom: 80px;
+  left: 56px;
+  z-index: 150;
+  pointer-events: none;
+  animation: fadeSlideIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.title {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #e8f4ff;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4a7fa8;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .container {
+    left: 28px;
+    bottom: 64px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+}

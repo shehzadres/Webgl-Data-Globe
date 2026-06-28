@@ -1,0 +1,21 @@
+.page {
+  position: relative;
+  width: 100vw;
+  background: #050a14;
+  /* Page height is determined by the scrollContainer child */
+}
+
+.canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1;
+}
+
+.scrollContainer {
+  position: relative;
+  z-index: 2;
+  /* Height set inline to SCROLL_HEIGHT — allows ScrollTrigger to track */
+  pointer-events: none;
+}

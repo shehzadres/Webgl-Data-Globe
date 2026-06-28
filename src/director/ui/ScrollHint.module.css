@@ -1,0 +1,46 @@
+.hint {
+  position: fixed;
+  bottom: 36px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  animation: fadeIn 1s ease 1s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.label {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #2d5a7a;
+}
+
+.chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #2d5a7a;
+  border-bottom: 1px solid #2d5a7a;
+  transform: rotate(45deg);
+  animation: bounce 1.4s ease infinite;
+  margin-top: -4px;
+}
+
+.chevron:nth-child(3) {
+  animation-delay: 0.2s;
+  opacity: 0.5;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50%       { transform: rotate(45deg) translateY(4px); }
+}
