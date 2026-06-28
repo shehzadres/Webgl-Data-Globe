@@ -47,6 +47,42 @@ If you'd like to run it locally, follow the installation instructions below.
 
 ---
 
+## Screenshots
+
+### 🌍 Realistic Earth
+
+<p align="center">
+  <img src="docs/screenshots/earth.png" alt="Realistic Earth" width="90%">
+</p>
+
+---
+
+### ✈️ Flight Route Visualization
+
+<p align="center">
+  <img src="docs/screenshots/routes.png" alt="Flight Routes" width="90%">
+</p>
+
+---
+
+
+### 📊 Interactive Data Visualization
+
+<p align="center">
+  <img src="docs/screenshots/visualization.png" alt="Data Visualization" width="90%">
+</p>
+
+---
+
+
+### 🎛️ Interactive Control Panel
+
+<p align="center">
+  <img src="docs/screenshots/ui.png" alt="Advanced UI" width="90%">
+</p>
+
+---
+
 ## Architecture
 
                     Globe3D
